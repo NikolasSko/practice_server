@@ -17,4 +17,8 @@ class Site
    {
        return new View('site.hello', ['message' => 'hello working']);
    }
+    public function bye(): string
+    {
+        return new View('site.bye', ['message' => 'bye working']);
+    }
 }
