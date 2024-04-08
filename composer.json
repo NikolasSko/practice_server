@@ -1,12 +1,12 @@
 {
-    "name": "jurapro/pop-it-mvc",
+    "name": "gr421_sknal/pop-it-mvc",
     "description": "Simple mvc framework",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "jurapro",
-            "email": "jurapro@yandex.ru"
+            "name": "gr421_sknal",
+            "email": "Skobelev.nikita12345@mail.ru"
         }
     ],
     "minimum-stability": "dev",
