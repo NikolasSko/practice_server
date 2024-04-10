@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #D9D9D9;
+    height: 100px;
+    width: 1920px;
+}
+
+.logo{
+    position: relative;
+    top: 24px;
+    left: 147px;
+
+}
+
+.links{
+    position: relative;
+    bottom: 10px;
+    left: 1280px;
+    display:flex;
+    gap:70px
+
+}
+
+.enter{
+    position: relative;
+    left: 420px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.login{
+
+
+}
+

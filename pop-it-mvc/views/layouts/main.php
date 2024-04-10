@@ -6,23 +6,30 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pop it MVC</title>
+    <link rel="stylesheet" href="/practice_server/pop-it-mvc/public/css/style.css">
 </head>
 <body>
 <header>
     <nav>
-        <a href="<?= app()->route->getUrl('/hello') ?>">Главная</a>
-        <?php
-        if (!app()->auth::check()):
+        <img class="logo" src="/practice_server/pop-it-mvc/public/image/logo.png" alt="">
+        <div class="links">
+            <?php
+            if (!app()->auth::check()):
+                ?>
+                <a class="enter" href="<?= app()->route->getUrl('/login') ?>">Вход</a>
+
+            <?php
+            else:
+                ?>
+                <a href="<?= app()->route->getUrl('/users') ?>">Сотрудники</a>
+                <a href="<?= app()->route->getUrl('/login') ?>">Кафедры</a>
+                <a href="<?= app()->route->getUrl('/login') ?>">Дисциплины</a>
+                <a href="<?= app()->route->getUrl('/logout') ?>">Выход</a>
+            <?php
+            endif;
             ?>
-            <a href="<?= app()->route->getUrl('/login') ?>">Вход</a>
-            <a href="<?= app()->route->getUrl('/signup') ?>">Регистрация</a>
-        <?php
-        else:
-            ?>
-            <a href="<?= app()->route->getUrl('/logout') ?>">Выход (<?= app()->auth::user()->name ?>)</a>
-        <?php
-        endif;
-        ?>
+        </div>
+
     </nav>
 </header>
 <main>
