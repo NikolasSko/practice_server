@@ -11,7 +11,7 @@
 <body>
 <header>
     <nav>
-        <img class="logo" src="/practice_server/pop-it-mvc/public/image/logo.png" alt="">
+        <img class="logo" src="/practice_server/pop-it-mvc/public/image/logo.png" alt="logo">
         <div class="links">
             <?php
             if (!app()->auth::check()):
@@ -21,10 +21,10 @@
             <?php
             else:
                 ?>
-                <a href="<?= app()->route->getUrl('/users') ?>">Сотрудники</a>
-                <a href="<?= app()->route->getUrl('/login') ?>">Кафедры</a>
-                <a href="<?= app()->route->getUrl('/login') ?>">Дисциплины</a>
-                <a href="<?= app()->route->getUrl('/logout') ?>">Выход</a>
+                <a class="main_links" href="<?= app()->route->getUrl('/lecturers') ?>">Сотрудники</a>
+                <a class="main_links" href="<?= app()->route->getUrl('/departments') ?>">Кафедры</a>
+                <a class="main_links" href="<?= app()->route->getUrl('/disciplines') ?>">Дисциплины</a>
+                <a class="main_links" href="<?= app()->route->getUrl('/logout') ?>">Выход</a>
             <?php
             endif;
             ?>

@@ -17,9 +17,19 @@ class Site
         return (new View())->render('site.post', ['posts' => $posts]);
     }
 
-    public function users(): string
+    public function lecturers(): string
     {
-        return new View('site.users', ['message' => 'hello working']);
+        return new View('site.lecturers', ['message' => 'hello working']);
+    }
+
+    public function departments(): string
+    {
+        return new View('site.departments', ['message' => 'hello working']);
+    }
+
+    public function disciplines(): string
+    {
+        return new View('site.disciplines', ['message' => 'hello working']);
     }
 
     public function signup(Request $request): string
@@ -38,7 +48,7 @@ class Site
         }
         //Если удалось аутентифицировать пользователя, то редирект
         if (Auth::attempt($request->all())) {
-            app()->route->redirect('/users');
+            app()->route->redirect('/lecturers');
         }
         //Если аутентификация не удалась, то сообщение об ошибке
         return new View('site.login', ['message' => 'Неправильные логин или пароль']);
@@ -47,7 +57,7 @@ class Site
     public function logout(): void
     {
         Auth::logout();
-        app()->route->redirect('/users');
+        app()->route->redirect('/lecturers');
     }
 
 
