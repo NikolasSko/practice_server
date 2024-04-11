@@ -102,3 +102,84 @@ a{
 }
 
 
+
+
+
+
+
+
+.list{
+    margin-left: 160px;
+    margin-top: 158px;
+    list-style: none;
+}
+
+.list_group{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.list_items{
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.list_departments{
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+}
+
+.departments_btn{
+    height: 30px;
+    margin-top: 7px;
+
+}
+
+.lecturers_group{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.lecturers_btn{
+    margin-top: 10px;
+}
+
+.lecturers_add{
+    padding: 30px 200px;
+    background-color: #5a6bb0;
+    margin: 142px 0 0 165px;
+    position: relative;
+    top: 100px;
+    border-radius: 20px;
+    color: white;
+
+}
+
+.form_add_lecturer{
+    display: flex;
+    flex-direction: column;
+    width: 372px;
+    height: 702px;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.form_add_btn{
+    background-color: #656396;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    width: 130px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+

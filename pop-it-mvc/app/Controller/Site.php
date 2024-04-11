@@ -32,13 +32,14 @@ class Site
         return new View('site.disciplines', ['message' => 'hello working']);
     }
 
-    public function signup(Request $request): string
+    public function add_lecturer(Request $request): string
     {
-        if ($request->method === 'POST' && User::create($request->all())) {
-            app()->route->redirect('/go');
+        if ($request->method==='POST' && User::create($request->all())){
+            return new View('site.lecturers', []);
         }
-        return new View('site.signup');
+        return new View('site.add_lecturer');
     }
+
 
     public function login(Request $request): string
     {
