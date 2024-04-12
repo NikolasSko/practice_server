@@ -39,6 +39,31 @@ class Site
         }
         return new View('site.add_lecturer');
     }
+    public function add_dean(Request $request): string
+    {
+        if ($request->method==='POST' && User::create($request->all())){
+            return new View('site.lecturers', []);
+        }
+        return new View('site.add_dean');
+    }
+
+    public function add_department(Request $request): string
+    {
+        if ($request->method==='POST' && User::create($request->all())){
+            return new View('site.departments', []);
+        }
+        return new View('site.add_department');
+    }
+
+    public function attach_lecturer(Request $request): string
+    {
+        if ($request->method==='POST' && User::create($request->all())){
+            return new View('site.lecturers', []);
+        }
+        return new View('site.attach_lecturer');
+    }
+
+
 
 
     public function login(Request $request): string

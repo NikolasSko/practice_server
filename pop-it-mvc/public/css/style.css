@@ -180,6 +180,22 @@ a{
     border-radius: 5px;
 }
 
+.form_attach{
+    margin-top: 100px;
+    margin-left: 680px;
+}
+
+.attach_btn{
+    background-color: #656396;
+    position: relative;
+    right: 330px;
+    top: 80px;
+    width: 130px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+}
+
 
 
 
